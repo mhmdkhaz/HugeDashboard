@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashbord</title>
+    <!-- start in css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <!-- start in font awesome -->
+    <link rel="stylesheet" href="../public/FontAwesome/css font/all.min.css" />
+    <!-- start in font title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@300&family=Tajawal:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="bg-white h-screen shadow-red-700">
+      <!-- start in side bar -->
+      <aside class="fixed h-full">
+        <div class="text-sidebar mb-10 relative">
+          <h1
+            class="text-sidebar leading-10 text-black text-center capitalize pt-4 text-xl underline underline-offset-8"
+          >
+            mohammed
+          </h1>
+        </div>
+        <div class="content-sidebar">
+          <ul class="list-none mx-2 md:mx-9">
+            <li
+              class="active cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-chart-bar"></i>
+                <span class="ml-3">dashbord</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-sharp fa-solid fa-gear"></i>
+                <span class="ml-3">setting</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-user"></i>
+                <span class="ml-3">profile</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="ml-3">projects</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="ml-3">courses</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-user-group"></i>
+                <span class="ml-3">friends</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-file"></i>
+                <span class="ml-3">files</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-braille"></i>
+                <span class="ml-3">plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- end in side bar -->
+
+      <!-- start in dashpord -->
+      <div class="content">
+        <!-- start in navbar -->
+        <nav class="flex flex-row flex-nowrap justify-between py-2 px-3">
+          <form action="">
+            <input
+              type="text"
+              class="border-slate-200 border-2 p-1 rounded-lg"
+              placeholder="type a keyword"
+            />
+          </form>
+          <div class="icon flex flex-nowrap items-center">
+            <span class="font-normal">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="imgs/avatar.png" class="max-w-none w-8 h-8" alt="" />
+          </div>
+        </nav>
+        <!-- end in navbar -->
+        <section class="wrapper w-full px-3 py-2">
+          <h1 class="text-3xl capitalize mb-10 main-text">dashpord</h1>
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-2">
+            <!-- start card welcome -->
+            <div class="bg-white welcome rounded-lg">
+              <div
+                class="ContentHeaderWelcome flex flex-nowrap justify-between rounded-lg"
+              >
+                <div class="ContentText">
+                  <h1 class="text-2xl pl-6 pt-2 capitalize">welcome</h1>
+                  <p class="capitalize pl-6 pt-2 mb-12">mhmd</p>
+                </div>
+                <img
+                  src="imgs/welcome.png"
+                  class="m-5 hidden xl:block"
+                  alt=""
+                />
+              </div>
+              <div class="ContentWelcome">
+                <img
+                  src="imgs/avatar.png"
+                  class="ImgDshpordPerson border-4 border-white rounded-full"
+                  alt=""
+                />
+                <div
+                  class="flex flex-wrap mt-9 mb-4 border-y-2 border-slate-200 py-4"
+                >
+                  <div class="flex-1 text-center">
+                    <h3 class="capitalize leading-10">osama</h3>
+                    <p class="leading-loose capitalize">developer</p>
+                  </div>
+                  <div class="flex-1 text-center">
+                    <h3 class="capitalize leading-10">20</h3>
+                    <p class="leading-loose capitalize">project</p>
+                  </div>
+                  <div class="flex-1 text-center">
+                    <h3 class="capitalize leading-10">$8500</h3>
+                    <p class="leading-loose capitalize">earned</p>
+                  </div>
+                </div>
+                <button
+                  class="bg-cyan-700 hover:bg-cyan-600 text-white font-bold py-2 px-4 border-b-4 border-cyan-800 hover:border-cyan-700 rounded ease-in duration-200"
+                >
+                  Button
+                </button>
+              </div>
+            </div>
+            <!-- start card Quick -->
+            <div class="bg-white Quick rounded-lg">
+              <div class="ContentText">
+                <h1 class="text-2xl pl-6 pt-2 capitalize">Quick Draft</h1>
+                <p class="capitalize pl-6 pt-2 mb-5">
+                  Write A Draft For Your Ideas
+                </p>
+              </div>
+              <form action="" class="px-4">
+                <input
+                  type="text"
+                  placeholder="Title"
+                  class="w-full border-2 border-slate-200 rounded-md p-1 mb-5"
+                />
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="your thought"
+                  class="p-1"
+                ></textarea>
+              </form>
+              <button
+                class="bg-cyan-700 hover:bg-cyan-600 text-white font-bold py-1 px-3 border-b-4 border-cyan-800 hover:border-cyan-700 rounded ease-in duration-200 relative my-5"
+              >
+                save
+              </button>
+            </div>
+            <!-- start card  -->
+          </div>
+        </section>
+      </div>
+      <!-- start in dashpord -->
+    </section>
+  </body>
+</html>

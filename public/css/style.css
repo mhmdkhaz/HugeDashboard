@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+}
+
+:root {
+  --gray: #888;
+  --LightGray: #eee;
+}
+
+/* start in sidebar  */
+aside {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+aside h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 16px;
+  height: 16px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 4px solid white;
+  background-color: #000;
+}
+
+.active {
+  background-color: rgb(226 232 240);
+}
+
+@media (max-width: 767px) {
+  aside {
+    width: 58px;
+    /* opacity: 0.8; */
+  }
+  aside ul li span {
+    display: none;
+  }
+  aside .text-sidebar {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* aside {
+    width: 40vw;
+  } */
+}
+
+/* end in sidebar */
+
+/* start in nav */
+.content {
+  margin-left: 250px;
+}
+
+.content nav .icon {
+  letter-spacing: 10px;
+}
+
+.content nav .icon span {
+  position: relative;
+}
+
+.content nav .icon span::before {
+  content: "";
+  background-color: #f44336;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .content {
+    margin-left: 58px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* end in nav */
+
+/* start in  wrapper*/
+.content .wrapper {
+  background-color: #f1f5f9;
+  height: 100vh;
+}
+
+.content .wrapper .main-text {
+  position: relative;
+}
+
+.content .wrapper .main-text::after {
+  content: "";
+  background-color: #000;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.content .wrapper .main-text::before {
+  content: "";
+  /* z-index: -1; */
+  background-color: #fff;
+  width: 120px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+/* header welcome  */
+
+.content .wrapper .ContentHeaderWelcome {
+  background-color: var(--LightGray);
+}
+
+.content .wrapper p {
+  color: var(--gray);
+}
+
+.content .wrapper img {
+  width: 200px;
+}
+
+.content .wrapper .ContentWelcome .ImgDshpordPerson {
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+}
+
+.content .wrapper .Quick form input,
+.content .wrapper .Quick form textarea {
+  background-color: var(--LightGray);
+  border: 1px solid var(--LightGray);
+  outline: none;
+  width: 100%;
+}
+
+.content .wrapper button {
+  margin-left: 80%;
+}
+
+/* end in  wrapper*/
