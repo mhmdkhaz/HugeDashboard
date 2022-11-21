@@ -17,7 +17,7 @@
   --red-color: #f44336;
 }
 
-/* start in sidebar  */
+/*---------------------- start in sidebar /*---------------------- */
 aside {
   width: 250px;
   box-shadow: 0 0 10px #ddd;
@@ -52,9 +52,9 @@ aside h1::before {
   }
 }
 
-/* end in sidebar */
+/*---------------------- end in sidebar ----------------------*/
 
-/* start in nav */
+/* ----------------------start in nav---------------------- */
 .content {
   margin-left: 250px;
 }
@@ -86,7 +86,7 @@ aside h1::before {
 
 @media (min-width: 768px) and (max-width: 1023px) {
 }
-/* end in nav */
+/* ----------------------end in nav---------------------- */
 
 /* start in  wrapper*/
 .content .wrapper {
@@ -127,7 +127,7 @@ aside h1::before {
   color: var(--gray);
 }
 
-.content .wrapper img {
+.content .wrapper .ImgWelcome {
   width: 200px;
 }
 
@@ -251,26 +251,62 @@ aside h1::before {
 .content .wrapper .Yearly .team .details .LayerTow {
   background-color: rgb(34 197 94 / 20%);
 }
+/* -------------- end in Yearly -------------- */
 
 /* -------------- start in Tickets -------------- */
 .content .wrapper .Tickets .box {
   border: 1px solid #ccc;
+  transition: all 0.3s;
 }
 
+.content .wrapper .Tickets .total:hover {
+  border: 1px solid var(--orange-color);
+}
 .content .wrapper .Tickets .total i {
   color: var(--orange-color);
 }
 
+.content .wrapper .Tickets .pending:hover {
+  border: 1px solid var(--blueColor);
+}
 .content .wrapper .Tickets .pending i {
   color: var(--blueColor);
 }
 
+.content .wrapper .Tickets .closed:hover {
+  border: 1px solid var(--green-color);
+}
 .content .wrapper .Tickets .closed i {
   color: var(--green-color);
 }
 
+.content .wrapper .Tickets .deleted:hover {
+  border: 1px solid var(--red-color);
+}
 .content .wrapper .Tickets .deleted i {
   color: var(--red-color);
 }
+/* -------------- end in Tickets -------------- */
+
+/* -------------- start in News News  -------------- */
+.content .wrapper .News .NeswRow {
+  border-bottom: 2px solid var(--LightGray);
+}
+
+.content .wrapper .News .NeswRow span {
+  background-color: var(--LightGray);
+  /* color: var(--gray); */
+}
+/* -------------- end in News News  -------------- */
+
+/* -------------- start in Tasks  -------------- */
+.content .wrapper .Tasks .TaskRows {
+  border-bottom: 2px solid var(--LightGray);
+}
+
+.content .wrapper .Tasks i:hover {
+  color: var(--red-color);
+}
+/* -------------- end in Tasks  -------------- */
 
 /* end in  wrapper*/

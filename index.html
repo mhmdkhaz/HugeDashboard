@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashbord</title>
     <!-- start in css -->
-    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
     <!-- start in font awesome -->
-    <link rel="stylesheet" href="../public/FontAwesome/css font/all.min.css" />
+    <link rel="stylesheet" href="/public/FontAwesome/css font/all.min.css" />
     <!-- start in font title-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -121,13 +121,13 @@
             <span class="font-normal">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
-            <img src="imgs/avatar.png" class="max-w-none w-8 h-8" alt="" />
+            <img src="/public/imgs/avatar.png" class="max-w-none w-8 h-8" alt="" />
           </div>
         </nav>
         <!------------------------ end in navbar ------------------------>
         <section class="wrapper w-full px-3 py-2">
           <h1 class="text-3xl capitalize mb-10 main-text">dashpord</h1>
-          <div class="grid grid-cols-1 xl:grid-cols-2 gap-2 mb-5">
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-5">
             <!------------------------ start card welcome ------------------------>
             <div class="bg-white rounded-lg">
               <div
@@ -138,14 +138,14 @@
                   <p class="capitalize pl-6 pt-2 mb-12">mhmd</p>
                 </div>
                 <img
-                  src="imgs/welcome.png"
-                  class="m-5 hidden xl:block"
+                  src="/public/imgs/welcome.png"
+                  class="m-5 hidden xl:block ImgWelcome"
                   alt=""
                 />
               </div>
               <div class="ContentWelcome">
                 <img
-                  src="imgs/avatar.png"
+                  src="/public/imgs/avatar.png"
                   class="ImgDshpordPerson border-4 border-white rounded-full"
                   alt=""
                 />
@@ -292,6 +292,95 @@
               </div>
             </div>
           </div>
+          <!------------------------ end card  Tickets  ------------------------>
+
+          <!------------------------ start in  Latest News  ------------------------>
+          <div class="bg-white News  rounded-lg">
+            <div class="ContentText">
+              <h1 class="text-2xl pl-6 pt-2  capitalize">Latest News</h1>
+            </div>
+
+            <div class="NeswRow flex flex-row items-center px-6 py-5">
+              <img src="/public/imgs/news-01.png" class="w-24 rounded-lg" alt="">
+              <div class="ContentTextNews pl-3 grow ">
+                <h1 class="capitalize text-base font-bold">created sass section</hq>
+                <p class="capitalize text-sm font-thin">New SASS Examples & Tutorials</p>
+              </div>
+              <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+            </div>
+
+            <div class="NeswRow flex flex-row items-center px-6 py-5">
+              <img src="/public/imgs/news-02.png" class="w-24 rounded-lg" alt="">
+              <div class="ContentTextNews pl-3 grow ">
+                <h1 class="capitalize text-base font-bold">Changed The Design</hq>
+                <p class="capitalize text-sm font-thin">A Brand New Website Design</p>
+              </div>
+              <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+            </div>
+
+            <div class="NeswRow flex flex-row items-center px-6 py-5">
+              <img src="/public/imgs/news-03.png" class="w-24 rounded-lg" alt="">
+              <div class="ContentTextNews pl-3 grow ">
+                <h1 class="capitalize text-base font-bold">Team Increased</hq>
+                <p class="capitalize text-sm font-thin">3 Developers Joined The Team</p>
+              </div>
+              <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+            </div>
+
+            <div class="NeswRow flex flex-row items-center px-6 py-5">
+              <img src="/public/imgs/news-04.png" class="w-24 rounded-lg" alt="">
+              <div class="ContentTextNews pl-3 grow ">
+                <h1 class="capitalize text-base font-bold">Added Payment Gateway</hq>
+                <p class="capitalize text-sm font-thin">Many New Payment Gateways Added</p>
+              </div>
+              <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+            </div>
+          </div>
+          <!------------------------ end in  Latest News  ------------------------>
+
+          <!------------------------ start in  Latest Tasks  ------------------------>
+          <div class="bg-white Tasks  rounded-lg">
+            <div class="ContentText">
+              <h1 class="text-2xl pl-6 pt-2  capitalize">Latest Tasks</h1>
+            </div>
+
+            <div class="TaskRows flex flex-row items-end px-6 py-5 ">
+              <div class="ContentTextNews grow ">
+                <h1 class="capitalize text-base font-bold ">created sass section</hq>
+                <p class="capitalize text-sm font-thin">New SASS Examples & Tutorials</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete ease-in duration-100 cursor-pointer"></i>
+            </div>
+
+            
+            <div class="TaskRows flex flex-row items-end px-6 py-5">
+              <div class="ContentTextNews grow ">
+                <h1 class="capitalize text-base font-bold">created sass section</hq>
+                <p class="capitalize text-sm font-thin">New SASS Examples & Tutorials</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete ease-in duration-100 cursor-pointer"></i>
+            </div>
+
+            
+            <div class="TaskRows flex flex-row items-end px-6 py-5" style="color: #888;">
+              <div class="ContentTextNews grow ">
+                <h1 class="capitalize text-base font-bold line-through">created sass section</hq>
+                <p class="capitalize text-sm font-thin line-through">New SASS Examples & Tutorials</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete ease-in duration-100 cursor-pointer"></i>
+            </div>
+
+            
+            <div class="TaskRows flex flex-row items-end px-6 py-5">
+              <div class="ContentTextNews grow ">
+                <h1 class="capitalize text-base font-bold">created sass section</hq>
+                <p class="capitalize text-sm font-thin">New SASS Examples & Tutorials</p>
+              </div>
+              <i class="fa-regular fa-trash-can delete ease-in duration-100 cursor-pointer"></i>
+            </div>
+
+          </div>
+          <!------------------------ end in  Latest Tasks  ------------------------>
         </section>
       </div>
       <!-- start in dashpord -->
