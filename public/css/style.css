@@ -325,4 +325,68 @@ aside h1::before {
 }
 /* -------------- end in Top Latest Uploads -------------- */
 
+/* -------------- start in Top Project Progress -------------- */
+.content .wrapper .LastProject ul::before {
+  content: "";
+  background-color: var(--blueColor);
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 11px;
+  top: 0;
+}
+
+.content .wrapper .LastProject ul li::before {
+  content: "dd";
+  background-color: var(--blueColor);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: 2px solid var(--blueColor);
+  margin-right: 5px;
+}
+/* -------------- end in Top Project Progress -------------- */
+
+/* -------------- start in Top Reminders -------------- */
+.content .wrapper .Reminders li span {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+/* blue */
+.content .wrapper .Reminders li .BlueSpan {
+  background-color: var(--blueColor);
+}
+.content .wrapper .Reminders li .blue {
+  border-left: 2px solid var(--blueColor);
+}
+
+/* green */
+.content .wrapper .Reminders li .GreenSpan {
+  background-color: var(--green-color);
+}
+.content .wrapper .Reminders li .green {
+  border-left: 2px solid var(--green-color);
+}
+
+/* orange */
+.content .wrapper .Reminders li .OrangeSpan {
+  background-color: var(--orange-color);
+}
+.content .wrapper .Reminders li .orange {
+  border-left: 2px solid var(--orange-color);
+}
+
+/* red */
+.content .wrapper .Reminders li .RedSpan {
+  background-color: var(--red-color);
+}
+.content .wrapper .Reminders li .red {
+  border-left: 2px solid var(--red-color);
+}
+
+/* -------------- end in Top Reminders -------------- */
+
 /* end in  wrapper*/

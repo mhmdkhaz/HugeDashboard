@@ -565,10 +565,6 @@ video {
   position: relative;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
 .m-5 {
   margin: 1.25rem;
 }
@@ -716,10 +712,6 @@ video {
   flex-wrap: nowrap;
 }
 
-.place-content-center {
-  place-content: center;
-}
-
 .items-end {
   align-items: flex-end;
 }
@@ -854,6 +846,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -870,20 +867,12 @@ video {
   padding-left: 0.75rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-center {
@@ -1342,6 +1331,81 @@ aside h1::before {
 }
 
 /* -------------- end in Top Latest Uploads -------------- */
+
+/* -------------- start in Top Project Progress -------------- */
+
+.content .wrapper .LastProject ul::before {
+  content: "";
+  background-color: var(--blueColor);
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 11px;
+  top: 0;
+}
+
+.content .wrapper .LastProject ul li::before {
+  content: "dd";
+  background-color: var(--blueColor);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: 2px solid var(--blueColor);
+  margin-right: 5px;
+}
+
+/* -------------- end in Top Project Progress -------------- */
+
+/* -------------- start in Top Reminders -------------- */
+
+.content .wrapper .Reminders li span {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+/* blue */
+
+.content .wrapper .Reminders li .BlueSpan {
+  background-color: var(--blueColor);
+}
+
+.content .wrapper .Reminders li .blue {
+  border-left: 2px solid var(--blueColor);
+}
+
+/* green */
+
+.content .wrapper .Reminders li .GreenSpan {
+  background-color: var(--green-color);
+}
+
+.content .wrapper .Reminders li .green {
+  border-left: 2px solid var(--green-color);
+}
+
+/* orange */
+
+.content .wrapper .Reminders li .OrangeSpan {
+  background-color: var(--orange-color);
+}
+
+.content .wrapper .Reminders li .orange {
+  border-left: 2px solid var(--orange-color);
+}
+
+/* red */
+
+.content .wrapper .Reminders li .RedSpan {
+  background-color: var(--red-color);
+}
+
+.content .wrapper .Reminders li .red {
+  border-left: 2px solid var(--red-color);
+}
+
+/* -------------- end in Top Reminders -------------- */
 
 /* end in  wrapper*/
 
