@@ -309,4 +309,20 @@ aside h1::before {
 }
 /* -------------- end in Tasks  -------------- */
 
+/* -------------- start in Top Search Items  -------------- */
+.content .wrapper .TopSearch .ItemTopSearch .ItemNumber {
+  background-color: var(--LightGray);
+}
+/* -------------- end in Top Search Items  -------------- */
+
+/* -------------- start in Top Latest Uploads -------------- */
+.content .wrapper .LatestUploads ul li {
+  border-bottom: 2px solid var(--LightGray);
+}
+
+.content .wrapper .LatestUploads ul li span {
+  background-color: var(--LightGray);
+}
+/* -------------- end in Top Latest Uploads -------------- */
+
 /* end in  wrapper*/
