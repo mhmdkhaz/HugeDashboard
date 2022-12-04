@@ -561,6 +561,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -620,8 +624,40 @@ video {
   margin-right: 1rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -670,6 +706,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .max-w-none {
@@ -732,6 +772,14 @@ video {
   gap: 1rem;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -746,6 +794,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .border-2 {
@@ -851,6 +903,16 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -873,6 +935,18 @@ video {
 
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -921,6 +995,14 @@ video {
   font-weight: 100;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -941,6 +1023,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -985,6 +1072,10 @@ video {
   --orange-color: #f59e0b;
   --green-color: #22c55e;
   --red-color: #f44336;
+}
+
+.BorderBottomLight {
+  border-bottom: 2px solid var(--LightGray);
 }
 
 /*---------------------- start in sidebar /*---------------------- */
@@ -1289,10 +1380,6 @@ aside h1::before {
 
 /* -------------- start in News News  -------------- */
 
-.content .wrapper .News .NeswRow {
-  border-bottom: 2px solid var(--LightGray);
-}
-
 .content .wrapper .News .NeswRow span {
   background-color: var(--LightGray);
   /* color: var(--gray); */
@@ -1301,10 +1388,6 @@ aside h1::before {
 /* -------------- end in News News  -------------- */
 
 /* -------------- start in Tasks  -------------- */
-
-.content .wrapper .Tasks .TaskRows {
-  border-bottom: 2px solid var(--LightGray);
-}
 
 .content .wrapper .Tasks i:hover {
   color: var(--red-color);
@@ -1321,10 +1404,6 @@ aside h1::before {
 /* -------------- end in Top Search Items  -------------- */
 
 /* -------------- start in Top Latest Uploads -------------- */
-
-.content .wrapper .LatestUploads ul li {
-  border-bottom: 2px solid var(--LightGray);
-}
 
 .content .wrapper .LatestUploads ul li span {
   background-color: var(--LightGray);
@@ -1407,6 +1486,117 @@ aside h1::before {
 
 /* -------------- end in Top Reminders -------------- */
 
+/* -------------- start in Latest Post -------------- */
+
+.content .wrapper .LatestPost .icon {
+  color: var(--gray);
+}
+
+/* -------------- end in Latest Post -------------- */
+
+/* -------------- start in SocialMedia -------------- */
+
+.content .wrapper .SocialMedia .twitter {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.content .wrapper .SocialMedia .twitter i {
+  color: white;
+  background-color: #1da1f2;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .twitter span {
+  color: #1da1f2;
+}
+
+.content .wrapper .SocialMedia .twitter a {
+  color: white;
+  background-color: #1da1f2;
+  padding: 4px 10px;
+}
+
+/* facebook */
+
+.content .wrapper .SocialMedia .facebook {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.content .wrapper .SocialMedia .facebook i {
+  color: white;
+  background-color: #1877f2;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .facebook span {
+  color: #1877f2;
+}
+
+.content .wrapper .SocialMedia .facebook a {
+  color: white;
+  background-color: #1877f2;
+  padding: 4px 10px;
+}
+
+/* you tube */
+
+.content .wrapper .SocialMedia .YouTube {
+  background-color: rgb(255 0 0 / 20%);
+}
+
+.content .wrapper .SocialMedia .YouTube i {
+  color: white;
+  background-color: #ff0000;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .YouTube span {
+  color: #ff0000;
+}
+
+.content .wrapper .SocialMedia .YouTube a {
+  color: white;
+  background-color: #ff0000;
+  padding: 4px 10px;
+}
+
+/* linked in */
+
+.content .wrapper .SocialMedia .linkedin {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.content .wrapper .SocialMedia .linkedin i {
+  color: white;
+  background-color: #0077b5;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .linkedin span {
+  color: #0077b5;
+}
+
+.content .wrapper .SocialMedia .linkedin a {
+  color: white;
+  background-color: #0077b5;
+  padding: 4px 10px;
+}
+
+/* -------------- end in SocialMedia -------------- */
+
+/* -------------- start in table -------------- */
+
+table td,
+th {
+  border: 1px solid #eee;
+}
+
+table .team img {
+  transform: translate(0, -50%);
+}
+
+/* -------------- end in table -------------- */
+
 /* end in  wrapper*/
 
 .hover\:border-cyan-700:hover {
@@ -1442,10 +1632,6 @@ aside h1::before {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
   }
 }
 

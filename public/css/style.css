@@ -17,6 +17,10 @@
   --red-color: #f44336;
 }
 
+.BorderBottomLight {
+  border-bottom: 2px solid var(--LightGray);
+}
+
 /*---------------------- start in sidebar /*---------------------- */
 aside {
   width: 250px;
@@ -289,9 +293,6 @@ aside h1::before {
 /* -------------- end in Tickets -------------- */
 
 /* -------------- start in News News  -------------- */
-.content .wrapper .News .NeswRow {
-  border-bottom: 2px solid var(--LightGray);
-}
 
 .content .wrapper .News .NeswRow span {
   background-color: var(--LightGray);
@@ -300,9 +301,6 @@ aside h1::before {
 /* -------------- end in News News  -------------- */
 
 /* -------------- start in Tasks  -------------- */
-.content .wrapper .Tasks .TaskRows {
-  border-bottom: 2px solid var(--LightGray);
-}
 
 .content .wrapper .Tasks i:hover {
   color: var(--red-color);
@@ -316,9 +314,6 @@ aside h1::before {
 /* -------------- end in Top Search Items  -------------- */
 
 /* -------------- start in Top Latest Uploads -------------- */
-.content .wrapper .LatestUploads ul li {
-  border-bottom: 2px solid var(--LightGray);
-}
 
 .content .wrapper .LatestUploads ul li span {
   background-color: var(--LightGray);
@@ -388,5 +383,106 @@ aside h1::before {
 }
 
 /* -------------- end in Top Reminders -------------- */
+
+/* -------------- start in Latest Post -------------- */
+.content .wrapper .LatestPost .icon {
+  color: var(--gray);
+}
+/* -------------- end in Latest Post -------------- */
+
+/* -------------- start in SocialMedia -------------- */
+.content .wrapper .SocialMedia .twitter {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.content .wrapper .SocialMedia .twitter i {
+  color: white;
+  background-color: #1da1f2;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .twitter span {
+  color: #1da1f2;
+}
+
+.content .wrapper .SocialMedia .twitter a {
+  color: white;
+  background-color: #1da1f2;
+  padding: 4px 10px;
+}
+
+/* facebook */
+.content .wrapper .SocialMedia .facebook {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.content .wrapper .SocialMedia .facebook i {
+  color: white;
+  background-color: #1877f2;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .facebook span {
+  color: #1877f2;
+}
+
+.content .wrapper .SocialMedia .facebook a {
+  color: white;
+  background-color: #1877f2;
+  padding: 4px 10px;
+}
+/* you tube */
+.content .wrapper .SocialMedia .YouTube {
+  background-color: rgb(255 0 0 / 20%);
+}
+
+.content .wrapper .SocialMedia .YouTube i {
+  color: white;
+  background-color: #ff0000;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .YouTube span {
+  color: #ff0000;
+}
+
+.content .wrapper .SocialMedia .YouTube a {
+  color: white;
+  background-color: #ff0000;
+  padding: 4px 10px;
+}
+/* linked in */
+.content .wrapper .SocialMedia .linkedin {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.content .wrapper .SocialMedia .linkedin i {
+  color: white;
+  background-color: #0077b5;
+  padding: 10px;
+}
+
+.content .wrapper .SocialMedia .linkedin span {
+  color: #0077b5;
+}
+
+.content .wrapper .SocialMedia .linkedin a {
+  color: white;
+  background-color: #0077b5;
+  padding: 4px 10px;
+}
+/* -------------- end in SocialMedia -------------- */
+
+/* -------------- start in table -------------- */
+table td,
+th {
+  border: 1px solid #eee;
+}
+
+table .team img {
+  transform: translate(0, -50%);
+}
+
+/* -------------- end in table -------------- */
 
 /* end in  wrapper*/
