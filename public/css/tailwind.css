@@ -652,6 +652,14 @@ video {
   margin-left: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -726,6 +734,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .list-none {
@@ -963,11 +975,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -981,6 +988,16 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-normal {
@@ -1047,6 +1064,15 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.outline-0 {
+  outline-width: 0px;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1074,9 +1100,45 @@ video {
   --red-color: #f44336;
 }
 
+/* glopal */
+
 .BorderBottomLight {
   border-bottom: 2px solid var(--LightGray);
 }
+
+/* input[type="checkbox"] {
+  display: none;
+}
+
+label .switch {
+  background: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+  border: 2px #fff solid;
+}
+
+input[type="checkbox"] + label .bar {
+  background: white;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translate(0%, -50%);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label .bar {
+  background: white;
+  left: 45px;
+}
+input[type="checkbox"]:checked + label .switch {
+  background-color: var(--blueColor);
+} */
 
 /*---------------------- start in sidebar /*---------------------- */
 
@@ -1212,9 +1274,9 @@ aside h1::before {
   width: 100%;
 }
 
-.content .wrapper button {
+/* .content .wrapper button {
   margin-left: 80%;
-}
+} */
 
 /* -------------- start in Yearly -------------- */
 
@@ -1596,6 +1658,132 @@ table .team img {
 }
 
 /* -------------- end in table -------------- */
+
+/* --------------------------------------------------- start in setting -------------------------------------------------------------------*/
+
+/* start in site control */
+
+.content .wrapper .settings .siteControl textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  resize: none;
+}
+
+/* end in site control */
+
+/* start in General Info */
+
+.content .wrapper .settings .GeneralInfo form input {
+  border: 1px solid #ccc;
+}
+
+.content .wrapper .settings .GeneralInfo form button {
+  color: var(--blueColor);
+}
+
+/* end in General Info */
+
+/* start  in SecurityInfo */
+
+.content .wrapper .settings .SecurityInfo .box {
+  border-bottom: 1px solid var(--LightGray);
+}
+
+.content .wrapper .settings .SecurityInfo a {
+  background-color: var(--blueColor);
+}
+
+/* end in SecurityInfo */
+
+/* start in SocialInfo */
+
+.content .wrapper .settings .SocialInfo .BoxSocial i {
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  color: var(--gray);
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  width: 40px;
+  height: 40px;
+}
+
+.content .wrapper .settings .SocialInfo .BoxSocial input {
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 0 6px 6px 0;
+  outline: none;
+}
+
+#Add:focus ~ #icon {
+  color: red;
+  padding: 50px;
+}
+
+/* end in SocialInfo */
+
+/* start in WidgetsControl */
+
+.content .wrapper .settings .WidgetsControl div input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+.content .wrapper .settings .WidgetsControl div label {
+  padding-left: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.content .wrapper .settings .WidgetsControl div label::before,
+.content .wrapper .settings .WidgetsControl div label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+
+.content .wrapper .settings .WidgetsControl div label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--gray);
+}
+
+.content .wrapper .settings .WidgetsControl div label:hover::before {
+  border-color: var(--blueColor);
+}
+
+.content .wrapper .settings .WidgetsControl div label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  background-color: var(--blueColor);
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+}
+
+.content
+  .wrapper
+  .settings
+  .WidgetsControl
+  div
+  input[type="checkbox"]:checked
+  + label::after {
+  transform: scale(1);
+}
+
+/* end in WidgetsControl */
+
+/* --------------------------------------------------- end in setting -------------------------------------------------------------------*/
 
 /* end in  wrapper*/
 

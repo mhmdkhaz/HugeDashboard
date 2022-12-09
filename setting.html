@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- start in css -->
+    <link rel="stylesheet" href="public/css/tailwind.css" />
+    <!-- start in font awesome -->
+    <link rel="stylesheet" href="public/FontAwesome/css font/all.min.css" />
+    <!-- start in font title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@300&family=Tajawal:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="bg-white h-screen shadow-red-700">
+      <!-- start in side bar -->
+      <aside class="fixed h-full">
+        <div class="text-sidebar mb-10 relative">
+          <h1
+            class="text-sidebar leading-10 text-black text-center capitalize pt-4 text-xl underline underline-offset-8"
+          >
+            mohammed
+          </h1>
+        </div>
+        <div class="content-sidebar">
+          <ul class="list-none mx-2 md:mx-9">
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="index.html">
+                <i class="fa-regular fa-chart-bar"></i>
+                <span class="ml-3">dashbord</span>
+              </a>
+            </li>
+
+            <li
+              class="active cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-sharp fa-solid fa-gear"></i>
+                <span class="ml-3">setting</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-user"></i>
+                <span class="ml-3">profile</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="ml-3">projects</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="ml-3">courses</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-user-group"></i>
+                <span class="ml-3">friends</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-file"></i>
+                <span class="ml-3">files</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-braille"></i>
+                <span class="ml-3">plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- end in side bar -->
+
+      <!-- start in setting -->
+      <div class="content">
+        <!------------------------ start in navbar ------------------------>
+        <nav class="flex flex-row flex-nowrap justify-between py-2 px-3">
+          <form action="">
+            <input
+              type="text"
+              class="border-slate-200 border-2 p-1 rounded-lg"
+              placeholder="type a keyword"
+            />
+          </form>
+          <div class="icon flex flex-nowrap items-center">
+            <span class="font-normal">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img
+              src="public/imgs/avatar.png"
+              class="max-w-none w-8 h-8"
+              alt=""
+            />
+          </div>
+        </nav>
+        <!------------------------ end in navbar ------------------------>
+        <section class="wrapper w-full px-3 py-2">
+          <h1 class="text-3xl capitalize mb-10 main-text">settings</h1>
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-5 settings">
+            <!-- ------------------- start in Site Control ---------------- -->
+            <div class="bg-white siteControl rounded-lg px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">Site Control</h1>
+                <p class="capitalize pt-2 mb-5">
+                  Control The Website If There Is Maintenance
+                </p>
+              </div>
+              <div class="TextCheck flex flex-row">
+                <div class="grow">
+                  <h1 class="text-lg pt-2 capitalize">Website Control</h1>
+                  <p class="capitalize pt-2 mb-5">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="" id="switch" />
+                  <label for="switch">
+                    <div class="switch">
+                      <div class="bar"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="6"
+                class="px-3 py-2 outline-0 rounded"
+                placeholder="Colse Message Content"
+              ></textarea>
+            </div>
+            <!-- ------------------- start in Site Control ---------------- -->
+
+            <!-- ------------------- start in Site Control ---------------- -->
+            <div class="bg-white GeneralInfo rounded-lg px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">General Info</h1>
+                <p class="capitalize pt-2 mb-5">
+                  General Information About Your Account
+                </p>
+              </div>
+              <form action="">
+                <div class="flex flex-col mt-4">
+                  <label for="" class="capitalize">First name</label>
+                  <input
+                    type="text"
+                    class="rounded px-4 py-2 mt-2 text-sm outline-none"
+                    placeholder="First Name"
+                  />
+                </div>
+
+                <div class="flex flex-col mt-4">
+                  <label for="" class="capitalize">Last name</label>
+                  <input
+                    type="text"
+                    class="rounded px-4 py-2 mt-2 text-sm outline-none"
+                    placeholder="Last Name"
+                  />
+                </div>
+
+                <div class="flex flex-col mt-4 mb-6">
+                  <label for="" class="capitalize">email</label>
+                  <div class="flex flex-row">
+                    <input
+                      type="email"
+                      class="rounded grow px-4 py-2 mt-2 text-sm outline-none cursor-not-allowed"
+                      placeholder="mh@nn.sa"
+                      style="background-color: #f0f4f8"
+                      disabled
+                    />
+                    <button class="text-yellow px-4">change</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- ------------------- start in Site Control ---------------- -->
+
+            <!-- ------------------- start in Site Control ---------------- -->
+            <div class="bg-white SecurityInfo rounded-lg px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">Security Info</h1>
+                <p class="capitalize pt-2 mb-5">
+                  Security Information About Your Account
+                </p>
+              </div>
+              <div class="box pb-5 mb-5 flex flex-row items-center capitalize">
+                <div class="grow">
+                  <h2>password</h2>
+                  <p>Last Change On 25/10/2021</p>
+                </div>
+                <a href="" class="text-white px-2 py-1 rounded">change</a>
+              </div>
+
+              <div class="box pb-5 mb-5 flex flex-row items-center capitalize">
+                <div class="grow">
+                  <h2>Two-Factor Authentication</h2>
+                  <p>Enable/Disable The Feature</p>
+                </div>
+                <div>
+                  <input class="ToggleCheck" type="checkbox" name />
+                  <label for="switch">
+                    <div class="switch">
+                      <div class="bar"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="box pb-5 mb-5 flex flex-row items-center capitalize">
+                <div class="grow">
+                  <h2>Devices</h2>
+                  <p>Check The Login Devices List</p>
+                </div>
+                <a
+                  href=""
+                  style="background-color: #eee"
+                  class="Devices text-black px-2 py-1 rounded"
+                  >Devices</a
+                >
+              </div>
+            </div>
+            <!-- ------------------- end in Site Control ---------------- -->
+
+            <!-- ------------------- start in Site Social Info ---------------- -->
+            <div class="bg-white SocialInfo rounded-lg px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">Social Info</h1>
+                <p class="capitalize pt-2 mb-5">Social Media Information</p>
+              </div>
+              <div class="BoxSocial">
+                <div class="twitter .box flex flex-row mb-5">
+                  <i
+                    class="fa-brands fa-twitter center-flex c-grey text-center"
+                  ></i>
+                  <input
+                    type="text"
+                    class="grow px-3"
+                    placeholder="twitter username"
+                  />
+                </div>
+
+                <div class="facebook .box flex flex-row mb-5">
+                  <i
+                    class="fa-brands fa-facebook-f center-flex c-grey text-center"
+                  ></i>
+                  <input
+                    type="text"
+                    class="grow px-3"
+                    placeholder="facebook username"
+                  />
+                </div>
+
+                <div class="linkedin .box flex flex-row mb-5">
+                  <i
+                    class="fa-brands fa-linkedin center-flex c-grey text-center"
+                  ></i>
+                  <input
+                    type="text"
+                    class="grow px-3"
+                    placeholder="linkedin username"
+                  />
+                </div>
+
+                <div class="youtube .box flex flex-row mb-5">
+                  <i
+                    id="icon"
+                    class="fa-brands fa-youtube center-flex c-grey text-center"
+                  ></i>
+                  <input
+                    id="Add"
+                    type="text"
+                    class="grow px-3"
+                    placeholder="youtube username"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- ------------------- end in Site Social Info ---------------- -->
+
+            <!-- ------------------- start in Site Widgets Control ---------------- -->
+            <div class="bg-white WidgetsControl rounded-lg px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">Widgets Control</h1>
+                <p class="capitalize pt-2 mb-5">Show/Hide Widgets</p>
+              </div>
+
+              <div class="mb-15">
+                <input type="checkbox" id="one" checked="" />
+                <label for="one" class="px-6">Quick Draft</label>
+              </div>
+
+              <div class="mb-15">
+                <input type="checkbox" id="two" checked="" />
+                <label for="one" class="px-6">Quick Draft</label>
+              </div>
+
+              <div class="mb-15">
+                <input type="checkbox" id="one" checked="" />
+                <label for="one" class="px-6">Quick Draft</label>
+              </div>
+
+              <div class="mb-15">
+                <input type="checkbox" id="one" checked="" />
+                <label for="one" class="px-6">Quick Draft</label>
+              </div>
+
+              <div class="mb-15">
+                <input type="checkbox" id="one" checked="" />
+                <label for="one" class="px-6">Quick Draft</label>
+              </div>
+
+              <div class="mb-15">
+                <input type="checkbox" id="one" checked="" />
+                <label for="one" class="px-6">Quick Draft</label>
+              </div>
+            </div>
+            <!-- ------------------- end in Site Widgets Control ---------------- -->
+          </div>
+        </section>
+      </div>
+      <!-- start in setting -->
+    </section>
+    <!-- start in script java -->
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
