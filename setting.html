@@ -147,13 +147,10 @@
                     Open/Close Website And Type The Reason
                   </p>
                 </div>
-
                 <div>
-                  <input type="checkbox" name="" id="switch" />
-                  <label for="switch">
-                    <div class="switch">
-                      <div class="bar"></div>
-                    </div>
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
                   </label>
                 </div>
               </div>
@@ -168,7 +165,7 @@
             </div>
             <!-- ------------------- start in Site Control ---------------- -->
 
-            <!-- ------------------- start in Site Control ---------------- -->
+            <!-- ------------------- start in General Info ---------------- -->
             <div class="bg-white GeneralInfo rounded-lg px-4">
               <div class="ContentText">
                 <h1 class="text-2xl pt-2 capitalize">General Info</h1>
@@ -210,9 +207,9 @@
                 </div>
               </form>
             </div>
-            <!-- ------------------- start in Site Control ---------------- -->
+            <!-- ------------------- start in General Info ---------------- -->
 
-            <!-- ------------------- start in Site Control ---------------- -->
+            <!-- ------------------- start in SecurityInfo ---------------- -->
             <div class="bg-white SecurityInfo rounded-lg px-4">
               <div class="ContentText">
                 <h1 class="text-2xl pt-2 capitalize">Security Info</h1>
@@ -234,11 +231,9 @@
                   <p>Enable/Disable The Feature</p>
                 </div>
                 <div>
-                  <input class="ToggleCheck" type="checkbox" name />
-                  <label for="switch">
-                    <div class="switch">
-                      <div class="bar"></div>
-                    </div>
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
                   </label>
                 </div>
               </div>
@@ -256,7 +251,7 @@
                 >
               </div>
             </div>
-            <!-- ------------------- end in Site Control ---------------- -->
+            <!-- ------------------- end in SecurityInfo ---------------- -->
 
             <!-- ------------------- start in Site Social Info ---------------- -->
             <div class="bg-white SocialInfo rounded-lg px-4">
@@ -315,43 +310,99 @@
             <!-- ------------------- end in Site Social Info ---------------- -->
 
             <!-- ------------------- start in Site Widgets Control ---------------- -->
-            <div class="bg-white WidgetsControl rounded-lg px-4">
+            <div class="widgets-control px-4 bg-white rounded-lg">
               <div class="ContentText">
-                <h1 class="text-2xl pt-2 capitalize">Widgets Control</h1>
-                <p class="capitalize pt-2 mb-5">Show/Hide Widgets</p>
+                <h1 class="text-2xl pt-2 capitalize">Social Info</h1>
+                <p class="capitalize pt-2 mb-5">Social Media Information</p>
               </div>
-
-              <div class="mb-15">
-                <input type="checkbox" id="one" checked="" />
-                <label for="one" class="px-6">Quick Draft</label>
+              <div class="control flex items-center mb-4">
+                <input type="checkbox" id="one" checked />
+                <label for="one" class="capitalize cursor-pointer pl-8"
+                  >Quick Draft</label
+                >
               </div>
-
-              <div class="mb-15">
-                <input type="checkbox" id="two" checked="" />
-                <label for="one" class="px-6">Quick Draft</label>
+              <div class="control flex items-center mb-4">
+                <input type="checkbox" id="two" checked />
+                <label for="two" class="capitalize cursor-pointer pl-8"
+                  >Yearly Targets</label
+                >
               </div>
-
-              <div class="mb-15">
-                <input type="checkbox" id="one" checked="" />
-                <label for="one" class="px-6">Quick Draft</label>
+              <div class="control flex items-center mb-4">
+                <input type="checkbox" id="three" checked />
+                <label for="three" class="capitalize cursor-pointer pl-8"
+                  >Tickets Statistics</label
+                >
               </div>
-
-              <div class="mb-15">
-                <input type="checkbox" id="one" checked="" />
-                <label for="one" class="px-6">Quick Draft</label>
+              <div class="control flex items-center mb-4">
+                <input type="checkbox" id="four" checked />
+                <label for="four" class="capitalize cursor-pointer pl-8"
+                  >Latest News</label
+                >
               </div>
-
-              <div class="mb-15">
-                <input type="checkbox" id="one" checked="" />
-                <label for="one" class="px-6">Quick Draft</label>
+              <div class="control flex items-center mb-4">
+                <input type="checkbox" id="five" />
+                <label for="five" class="capitalize cursor-pointer pl-8"
+                  >Latest Tasks</label
+                >
               </div>
-
-              <div class="mb-15">
-                <input type="checkbox" id="one" checked="" />
-                <label for="one" class="px-6">Quick Draft</label>
+              <div class="control flex items-center mb-4">
+                <input type="checkbox" id="six" checked />
+                <label for="six" class="capitalize cursor-pointer pl-8"
+                  >Top Search Items</label
+                >
               </div>
             </div>
             <!-- ------------------- end in Site Widgets Control ---------------- -->
+
+            <!-- ------------------- start in Site Backup Manager ---------------- -->
+            <div class="bg-white BackupManager rounded-lg px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">Backup Manager</h1>
+                <p class="capitalize pt-2 mb-5">
+                  Control Backup Time And Location
+                </p>
+              </div>
+              <div class="mb-10">
+                <div class="manager">
+                  <input type="radio" name="time" id="daily" checked />
+                  <label for="daily">Daily</label>
+                </div>
+
+                <div class="manager">
+                  <input type="radio" name="time" id="Weekly" />
+                  <label for="Weekly">Daily</label>
+                </div>
+
+                <div class="manager">
+                  <input type="radio" name="time" id="Monthly" />
+                  <label for="Monthly">Daily</label>
+                </div>
+              </div>
+
+              <div class="flex flex-row servers">
+                <div
+                  class="flex flex-col items-center justify-center m-2 rounded-xl cursor-pointer px-12 py-2 w-full servre"
+                >
+                  <i class="fa-solid fa-server d-block mb-2"></i>
+                  <span class="capitalize">megaman</span>
+                </div>
+
+                <div
+                  class="flex flex-col items-center justify-center m-2 rounded-xl cursor-pointer px-12 py-2 w-full servre"
+                >
+                  <i class="fa-solid fa-server d-block mb-2"></i>
+                  <span class="capitalize">zero</span>
+                </div>
+
+                <div
+                  class="flex flex-col items-center justify-center m-2 rounded-xl cursor-pointer px-12 py-2 w-full servre"
+                >
+                  <i class="fa-solid fa-server d-block mb-2"></i>
+                  <span class="capitalize">sigma</span>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------- end in Site Backup Manager ---------------- -->
           </div>
         </section>
       </div>

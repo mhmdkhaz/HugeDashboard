@@ -577,6 +577,10 @@ video {
   margin: 0px;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -658,6 +662,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -812,6 +820,10 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -925,6 +937,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -955,6 +972,10 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-left {
@@ -1106,39 +1127,50 @@ video {
   border-bottom: 2px solid var(--LightGray);
 }
 
-/* input[type="checkbox"] {
+.toggle-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   display: none;
 }
 
-label .switch {
-  background: #ccc;
+.toggle-switch {
+  background-color: #ccc;
   width: 78px;
   height: 32px;
-  border-radius: 50px;
-  padding: 5px;
+  border-radius: 16px;
   position: relative;
-  border: 2px #fff solid;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-input[type="checkbox"] + label .bar {
-  background: white;
-  height: 24px;
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
   width: 24px;
+  height: 24px;
   position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translate(0%, -50%);
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
 }
 
-input[type="checkbox"]:checked + label .bar {
-  background: white;
-  left: 45px;
-}
-input[type="checkbox"]:checked + label .switch {
+.toggle-checkbox:checked + .toggle-switch {
   background-color: var(--blueColor);
-} */
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blueColor);
+}
 
 /*---------------------- start in sidebar /*---------------------- */
 
@@ -1723,20 +1755,18 @@ table .team img {
 
 /* start in WidgetsControl */
 
-.content .wrapper .settings .WidgetsControl div input[type="checkbox"] {
+.widgets-control .control input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
 }
 
-.content .wrapper .settings .WidgetsControl div label {
-  padding-left: 20px;
-  cursor: pointer;
+.widgets-control .control label {
   position: relative;
 }
 
-.content .wrapper .settings .WidgetsControl div label::before,
-.content .wrapper .settings .WidgetsControl div label::after {
+.widgets-control .control label::before,
+.widgets-control .control label::after {
   position: absolute;
   left: 0;
   top: 50%;
@@ -1744,18 +1774,18 @@ table .team img {
   border-radius: 4px;
 }
 
-.content .wrapper .settings .WidgetsControl div label::before {
+.widgets-control .control label::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   border: 2px solid var(--gray);
 }
 
-.content .wrapper .settings .WidgetsControl div label:hover::before {
+.widgets-control .control label:hover::before {
   border-color: var(--blueColor);
 }
 
-.content .wrapper .settings .WidgetsControl div label::after {
+.widgets-control .control label::after {
   font-family: var(--fa-style-family-classic);
   content: "\f00c";
   font-weight: 900;
@@ -1771,17 +1801,81 @@ table .team img {
   transition: 0.3s;
 }
 
-.content
-  .wrapper
-  .settings
-  .WidgetsControl
-  div
-  input[type="checkbox"]:checked
-  + label::after {
+.widgets-control .control input[type="checkbox"]:checked + label::after {
   transform: scale(1);
 }
 
 /* end in WidgetsControl */
+
+/* start in BackupManager */
+
+.content .wrapper .settings .BackupManager .manager input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+.content .wrapper .settings .BackupManager .manager label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.content .wrapper .settings .BackupManager .manager label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--gray);
+  border-radius: 50%;
+}
+
+.content .wrapper .settings .BackupManager .manager label::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  background: var(--blueColor);
+  border-radius: 50%;
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.content
+  .wrapper
+  .settings
+  .BackupManager
+  .manager
+  input[type="radio"]:checked
+  + label::before {
+  border-color: var(--blueColor);
+}
+
+.content
+  .wrapper
+  .settings
+  .BackupManager
+  .manager
+  input[type="radio"]:checked
+  + label::after {
+  transform: scale(1);
+}
+
+.content .wrapper .settings .BackupManager .servers .servre {
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.content .wrapper .settings .BackupManager .servers .servre:hover {
+  border-color: var(--blueColor);
+}
+
+/* end in BackupManager */
 
 /* --------------------------------------------------- end in setting -------------------------------------------------------------------*/
 
