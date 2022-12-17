@@ -170,6 +170,7 @@ aside h1::before {
 
 .content .wrapper p {
   color: var(--gray);
+  font-size: 12px;
 }
 
 .content .wrapper .ImgWelcome {
@@ -733,5 +734,20 @@ table .team img {
   border-radius: 6px;
 }
 /* --------------------------------------------------- end in profile -------------------------------------------------------------------*/
+
+/* --------------------------------------------------- start in project -------------------------------------------------------------------*/
+.content .wrapper .InformationProject {
+  border-top: 1px solid var(--LightGray);
+  border-bottom: 1px solid var(--LightGray);
+}
+
+.content .wrapper .InformationProject li {
+  background-color: var(--LightGray);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-left: 5px;
+  font-size: 13px;
+}
+/* --------------------------------------------------- end in projects -------------------------------------------------------------------*/
 
 /* end in  wrapper*/
