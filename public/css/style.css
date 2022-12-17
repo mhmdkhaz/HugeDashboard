@@ -690,4 +690,48 @@ table .team img {
 /* end in BackupManager */
 /* --------------------------------------------------- end in setting -------------------------------------------------------------------*/
 
+/* --------------------------------------------------- end in profile -------------------------------------------------------------------*/
+.content .wrapper .AboutMe {
+  border-right: 1px solid var(--LightGray);
+}
+
+.content .wrapper .rating i {
+  color: var(--orange-color);
+}
+
+.content .wrapper .information .box {
+  border-bottom: 1px solid var(--LightGray);
+  transition: 0.3s;
+}
+
+.content .wrapper .information .box:hover {
+  background-color: #f9f9f9;
+}
+
+.content .wrapper .information .box .first {
+  color: var(--gray);
+}
+
+.content .wrapper .information .box .SomeInformation {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1250px) {
+  .content .wrapper .information .box .SomeInformation {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.content .wrapper .skills ul li {
+  border-bottom: 1px solid var(--LightGray);
+}
+
+.content .wrapper .skills ul li span {
+  background-color: var(--LightGray);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+/* --------------------------------------------------- end in profile -------------------------------------------------------------------*/
+
 /* end in  wrapper*/

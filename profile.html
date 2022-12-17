@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashbord</title>
+    <!-- start in css -->
+    <link rel="stylesheet" href="public/css/tailwind.css" />
+    <!-- start in font awesome -->
+    <link rel="stylesheet" href="public/FontAwesome/css font/all.min.css" />
+    <!-- start in font title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@300&family=Tajawal:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="bg-white h-screen shadow-red-700">
+      <!-- start in side bar -->
+      <aside class="fixed h-full">
+        <div class="text-sidebar mb-10 relative">
+          <h1
+            class="text-sidebar leading-10 text-black text-center capitalize pt-4 text-xl underline underline-offset-8"
+          >
+            mohammed
+          </h1>
+        </div>
+        <div class="content-sidebar">
+          <ul class="list-none mx-2 md:mx-9">
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="index.html">
+                <i class="fa-regular fa-chart-bar"></i>
+                <span class="ml-3">dashbord</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="setting.html">
+                <i class="fa-sharp fa-solid fa-gear"></i>
+                <span class="ml-3">setting</span>
+              </a>
+            </li>
+
+            <li
+              class="active cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-user"></i>
+                <span class="ml-3">profile</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="ml-3">projects</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="ml-3">courses</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-user-group"></i>
+                <span class="ml-3">friends</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-file"></i>
+                <span class="ml-3">files</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-braille"></i>
+                <span class="ml-3">plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- end in side bar -->
+
+      <!-- start in dashpord -->
+      <div class="content">
+        <!------------------------ start in navbar ------------------------>
+        <nav class="flex flex-row flex-nowrap justify-between py-2 px-3">
+          <form action="">
+            <input
+              type="text"
+              class="border-slate-200 border-2 p-1 rounded-lg"
+              placeholder="type a keyword"
+            />
+          </form>
+          <div class="icon flex flex-nowrap items-center">
+            <span class="font-normal">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img
+              src="public/imgs/avatar.png"
+              class="max-w-none w-8 h-8"
+              alt=""
+            />
+          </div>
+        </nav>
+        <!------------------------ end in navbar ------------------------>
+        <section class="wrapper w-full px-3 py-2">
+          <h1 class="text-3xl capitalize mb-10 main-text">profile</h1>
+          <div class="bg-white rounded-lg grid justify-center items-center grid-cols-5 mb-5">
+            <div class="AboutMe h-4/5 px-3 flex flex-col justify-center items-center  col-span-5 xl:col-span-1 my-7 xl:my-0">
+              <img src="public/imgs/avatar.png" class="w-28 h-28 mb-4" alt="" />
+              <h1 class="mb-4 capitalize font-bold">mhmd khazaa</h2>
+              <p class="capitalize mb-4">level 20</p>
+              <div
+                class="rounded-full h-1.5 w-4/5 mb-4"
+                style="background-color: #eee"
+              >
+                <div
+                  class="h-1.5 rounded-full"
+                  style="width: 45%; background-color: #0075ff"
+                ></div>
+              </div>
+              <div class="rating mb-4">
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+              </div>
+              <p class="text-xs">550 rating</p>
+            </div>
+            <div class="col-span-5 xl:col-span-4 information">
+                <div class="box p-3 flex flex-col items-center xl:items-start">
+                    <h4 class="capitalize text-center xl:text-left w-full mb-2">general Information</h4>
+                    <div class="flex flex-row flex-wrap ">
+                        <div class="SomeInformation">
+                            <span class="capitalize first font-extralight">full name:</span>
+                            <span class="capitalize font-extralight">mhmd khazaa</span>
+                        </div>
+                        
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">gemnder:</span>
+                            <span class="capitalize font-extralight">male</span>
+                        </div>
+
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">Country:</span>
+                            <span class="capitalize font-extralight">Egypt</span>
+                        </div>
+                    </div>
+                    <label class="my-5" style="height: 20px;">
+                        <input class="toggle-checkbox" type="checkbox" checked />
+                        <div class="toggle-switch"></div>
+                      </label>
+                </div>
+
+                <div class="box p-3 flex flex-col items-center xl:items-start">
+                    <h4 class="capitalize text-center xl:text-left w-full mb-2">Personal Information</h4>
+                    <div class="flex flex-row flex-wrap ">
+                        <div class="SomeInformation ">
+                            <span class="capitalize first font-extralight">email:</span>
+                            <span class="capitalize font-extralight">mhmd@.com</span>
+                        </div>
+                        
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">phone:</span>
+                            <span class="capitalize font-extralight">01146234968</span>
+                        </div>
+
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">
+                                Date Of Birth:</span>
+                            <span class="capitalize font-extralight">7/7/2000</span>
+                        </div>
+                    </div>
+                    <label class="my-5" style="height: 20px;">
+                        <input class="toggle-checkbox" type="checkbox"  />
+                        <div class="toggle-switch"></div>
+                      </label>
+                </div>
+
+                <div class="box p-3 flex flex-col items-center xl:items-start">
+                    <h4 class="capitalize text-center xl:text-left w-full mb-2">Job Information</h4>
+                    <div class="flex flex-row flex-wrap ">
+                        <div class="SomeInformation ">
+                            <span class="capitalize first font-extralight">title:</span>
+                            <span class="capitalize font-extralight">front end developer</span>
+                        </div>
+                        
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">Programming Language:</span>
+                            <span class="capitalize font-extralight">js</span>
+                        </div>
+
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">Years Of Experience:</span>
+                            <span class="capitalize font-extralight">+2</span>
+                        </div>
+                    </div>
+                    <label class="my-5" style="height: 20px;">
+                        <input class="toggle-checkbox" type="checkbox" checked />
+                        <div class="toggle-switch"></div>
+                      </label>
+                </div>
+
+                <div class="box p-3 flex flex-col items-center xl:items-start">
+                    <h4 class="capitalize text-center xl:text-left w-full mb-2">Billing Information</h4>
+                    <div class="flex flex-row flex-wrap ">
+                        <div class="SomeInformation ">
+                            <span class="capitalize first font-extralight">Payment Method:</span>
+                            <span class="capitalize font-extralight">paypal</span>
+                        </div>
+                        
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">gemnder:</span>
+                            <span class="capitalize font-extralight">male</span>
+                        </div>
+
+                        <div class="SomeInformation ml-0 xl:ml-24">
+                            <span class="capitalize first font-extralight">Country:</span>
+                            <span class="capitalize font-extralight">Egypt</span>
+                        </div>
+                    </div>
+                    <label class="my-5" style="height: 20px;">
+                        <input class="toggle-checkbox" type="checkbox"  />
+                        <div class="toggle-switch"></div>
+                      </label>
+                </div>
+            </div>
+          </div>
+          <!-- ------------------ start in my skill -------------- -->
+          <div class="grid grid-cols-6 gap-4 mb-5">
+            <div class="bg-white skills col-span-6 xl:col-span-2 px-4 rounded-lg">
+                <div class="ContentText">
+                    <h1 class="text-2xl pt-2 capitalize">my skills</h1>
+                    <p class="capitalize pt-2 mb-5">
+                        Complete Skills List
+                    </p>
+                  </div>
+                  <ul class="flex flex-col items-center xl:items-start">
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>html</span>
+                        <span>pugjs</span>
+                        <span>haml</span>
+                    </li>
+
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>css</span>
+                        <span>sass</span>
+                        <span>style</span>
+                    </li>
+
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>javascript</span>
+                        <span>typescript</span>
+                    </li>
+
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>vuejs</span>
+                        <span>react</span>
+                    </li>
+
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>php</span>
+                        <span>laravel</span>
+                    </li>
+
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>pythone</span>
+                        <span>django</span>
+                    </li>
+
+                    <li class="capitalize text-base py-4 mb-2">
+                        <span>jet</span>
+                        <span>jasmine</span>
+                    </li>
+
+                  </ul>
+            </div>
+              <!-- -------------------------- end my skill ------------------- -->
+              <!-- -------------------------- start Latest Activities ------------------- -->
+            <div class="bg-white skills col-span-6 xl:col-span-4 px-4">
+              <div class="ContentText">
+                <h1 class="text-2xl pt-2 capitalize">Latest Activities</h1>
+                <p class="capitalize pt-2 mb-5">
+                  Latest Activities Done By The User
+                </p>
+              </div>
+
+              <div class="activites">
+                <div class="NeswRow BorderBottomLight lg:flex lg:flex-row flex flex-col  items-center px-6 py-5">
+                  <img src="public/imgs/activity-01.png" class="w-16 rounded-lg" alt="">
+                  <div class="ContentTextNews pl-3 grow py-3">
+                    <h1 class="capitalize text-base font-bold">created sass section</hq>
+                    <p class="capitalize text-sm font-thin">New SASS Examples & Tutorials</p>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                      <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+                      <p>Yesterday</p>
+                  </div>
+                </div>
+    
+                <div class="NeswRow BorderBottomLight lg:flex lg:flex-row flex flex-col  items-center px-6 py-5">
+                  <img src="public/imgs/activity-02.png" class="w-16 rounded-lg" alt="">
+                  <div class="ContentTextNews pl-3 grow py-3">
+                    <h1 class="capitalize text-base font-bold">Changed The Design</hq>
+                    <p class="capitalize text-sm font-thin">A Brand New Website Design</p>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                      <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+                      <p>Yesterday</p>
+                  </div>
+                </div>
+    
+                <div class="NeswRow BorderBottomLight lg:flex lg:flex-row flex flex-col  items-center px-6 py-5">
+                  <img src="public/imgs/activity-03.png" class="w-16 rounded-lg" alt="">
+                  <div class="ContentTextNews pl-3 grow py-3">
+                    <h1 class="capitalize text-base font-bold">Team Increased</hq>
+                    <p class="capitalize text-sm font-thin">3 Developers Joined The Team</p>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                      <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+                      <p>Yesterday</p>
+                  </div>
+                </div>
+    
+                <div class="NeswRow BorderBottomLight lg:flex lg:flex-row flex flex-col  items-center px-6 py-5">
+                  <img src="public/imgs/activity-01.png" class="w-16 rounded-lg" alt="">
+                  <div class="ContentTextNews pl-3 grow py-3">
+                    <h1 class="capitalize text-base font-bold">Added Payment Gateway</hq>
+                    <p class="capitalize text-sm font-thin">Many New Payment Gateways Added</p>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                      <span class="text-xs py-2 px-2 rounded-lg">3 Days Ago</span>
+                      <p>Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- start in dashpord -->
+    </section>
+  </body>
+</html>

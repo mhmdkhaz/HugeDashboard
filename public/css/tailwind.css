@@ -569,6 +569,14 @@ video {
   position: relative;
 }
 
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -594,6 +602,11 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .mb-10 {
@@ -656,16 +669,16 @@ video {
   margin-left: 3rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -704,6 +717,18 @@ video {
   height: 2.5rem;
 }
 
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-1\.5 {
+  height: 0.375rem;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -726,6 +751,18 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-none {
@@ -754,6 +791,14 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -880,6 +925,10 @@ video {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .py-2 {
@@ -1035,6 +1084,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .uppercase {
@@ -1879,6 +1932,52 @@ table .team img {
 
 /* --------------------------------------------------- end in setting -------------------------------------------------------------------*/
 
+/* --------------------------------------------------- end in profile -------------------------------------------------------------------*/
+
+.content .wrapper .AboutMe {
+  border-right: 1px solid var(--LightGray);
+}
+
+.content .wrapper .rating i {
+  color: var(--orange-color);
+}
+
+.content .wrapper .information .box {
+  border-bottom: 1px solid var(--LightGray);
+  transition: 0.3s;
+}
+
+.content .wrapper .information .box:hover {
+  background-color: #f9f9f9;
+}
+
+.content .wrapper .information .box .first {
+  color: var(--gray);
+}
+
+.content .wrapper .information .box .SomeInformation {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1250px) {
+  .content .wrapper .information .box .SomeInformation {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.content .wrapper .skills ul li {
+  border-bottom: 1px solid var(--LightGray);
+}
+
+.content .wrapper .skills ul li span {
+  background-color: var(--LightGray);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* --------------------------------------------------- end in profile -------------------------------------------------------------------*/
+
 /* end in  wrapper*/
 
 .hover\:border-cyan-700:hover {
@@ -1918,11 +2017,40 @@ table .team img {
 }
 
 @media (min-width: 1280px) {
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .xl\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 6rem;
+  }
+
   .xl\:block {
     display: block;
   }
 
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }
