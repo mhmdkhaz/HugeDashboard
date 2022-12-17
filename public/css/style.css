@@ -741,6 +741,14 @@ table .team img {
   border-bottom: 1px solid var(--LightGray);
 }
 
+@media (max-width: 1250px) {
+  .content .wrapper .InformationProject li {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .content .wrapper .InformationProject li {
   background-color: var(--LightGray);
   padding: 4px 10px;
