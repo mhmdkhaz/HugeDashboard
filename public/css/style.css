@@ -770,5 +770,26 @@ table .team img {
   top: -13px;
 }
 /* --------------------------------------------------- end in courses -------------------------------------------------------------------*/
+/* --------------------------------------------------- start in friends -------------------------------------------------------------------*/
+.content .wrapper .social .contact i {
+  background-color: var(--LightGray);
+  color: #666;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.content .wrapper .ProjectFriends {
+  font-size: 14px;
+  border-top: 1px solid var(--LightGray);
+  border-bottom: 1px solid var(--LightGray);
+}
+
+.content .wrapper .ProjectFriends .VIP p {
+  font-size: 40px;
+  /* opacity: 0.2; */
+  color: var(--orange-color);
+}
+/* --------------------------------------------------- end in friends -------------------------------------------------------------------*/
 
 /* end in  wrapper*/
