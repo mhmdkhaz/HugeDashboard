@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashbord</title>
+    <!-- start in css -->
+    <link rel="stylesheet" href="public/css/tailwind.css" />
+    <!-- start in font awesome -->
+    <link rel="stylesheet" href="public/FontAwesome/css font/all.min.css" />
+    <!-- start in font title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@300&family=Tajawal:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="bg-white h-screen shadow-red-700">
+      <!-- start in side bar -->
+      <aside class="fixed h-full">
+        <div class="text-sidebar mb-10 relative">
+          <h1
+            class="text-sidebar leading-10 text-black text-center capitalize pt-4 text-xl underline underline-offset-8"
+          >
+            mohammed
+          </h1>
+        </div>
+        <div class="content-sidebar">
+          <ul class="list-none mx-2 md:mx-9">
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-chart-bar"></i>
+                <span class="ml-3">dashbord</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="setting.html">
+                <i class="fa-sharp fa-solid fa-gear"></i>
+                <span class="ml-3">setting</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="profile.html">
+                <i class="fa-regular fa-user"></i>
+                <span class="ml-3">profile</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="ml-3">projects</span>
+              </a>
+            </li>
+
+            <li
+              class="active cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="#">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="ml-3">courses</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-user-group"></i>
+                <span class="ml-3">friends</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-regular fa-file"></i>
+                <span class="ml-3">files</span>
+              </a>
+            </li>
+
+            <li
+              class="hover:bg-slate-200 cursor-pointer text-sm mb-3 capitalize p-2 rounded-lg"
+            >
+              <a href="">
+                <i class="fa-solid fa-braille"></i>
+                <span class="ml-3">plans</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- end in side bar -->
+
+      <!-- start in content -->
+      <div class="content">
+        <!------------------------ start in navbar ------------------------>
+        <nav class="flex flex-row flex-nowrap justify-between py-2 px-3">
+          <form action="">
+            <input
+              type="text"
+              class="border-slate-200 border-2 p-1 rounded-lg"
+              placeholder="type a keyword"
+            />
+          </form>
+          <div class="icon flex flex-nowrap items-center">
+            <span class="font-normal">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img
+              src="public/imgs/avatar.png"
+              class="max-w-none w-8 h-8"
+              alt=""
+            />
+          </div>
+        </nav>
+        <!------------------------ end in navbar ------------------------>
+
+        <!-- -------------------- start in wrapper ------------------- -->
+        <section class="wrapper w-full px-3 py-2">
+          <h1 class="text-3xl capitalize mb-10 main-text">Courses</h1>
+          <div
+            class="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 mb-5"
+          >
+            <!-- ------------------------- 1 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-01.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 2 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-02.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 3 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-03.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 4 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-04.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 5 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-05.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 6 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-02.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 7 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-03.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 8 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-01.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 9 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-05.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------- 10 --------------------------- -->
+            <div class="bg-white rounded-lg relative">
+              <img
+                src="public/imgs/course-04.jpg"
+                class="w-full rounded-t-lg rounded-r-lg"
+                alt=""
+              />
+              <img
+                src="public/imgs/team-01.png"
+                class="rounded-full w-16 h-16 absolute left-5 top-6"
+                alt=""
+              />
+              <div class="ContentCourses px-4 my-5">
+                <h1 class="capitalize mb-3 font-extrabold">
+                  Mastering Web Design
+                </h1>
+                <p style="font-size: 14px">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div class="info relative">
+                <span
+                  class="main capitalize rounded-lg text-sm text-white absolute left-2/4"
+                  >course info</span
+                >
+                <div class="flex flex-row justify-between px-4 my-5">
+                  <p class="c-grey">
+                    <i class="fa-regular fa-user"></i>
+                    950
+                  </p>
+                  <p class="c-grey">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    165
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- -------------------- end in wrapper ------------------- -->
+      </div>
+      <!-- end in content -->
+    </section>
+  </body>
+</html>

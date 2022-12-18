@@ -758,4 +758,17 @@ table .team img {
 }
 /* --------------------------------------------------- end in projects -------------------------------------------------------------------*/
 
+/* --------------------------------------------------- start in courses -------------------------------------------------------------------*/
+.content .wrapper .info {
+  border-top: 1px solid var(--LightGray);
+}
+
+.content .wrapper .info .main {
+  background-color: var(--blueColor);
+  padding: 4px 10px;
+  transform: translateX(-50%);
+  top: -13px;
+}
+/* --------------------------------------------------- end in courses -------------------------------------------------------------------*/
+
 /* end in  wrapper*/
