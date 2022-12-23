@@ -170,7 +170,7 @@ aside h1::before {
 
 .content .wrapper p {
   color: var(--gray);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .content .wrapper .ImgWelcome {
@@ -777,6 +777,13 @@ table .team img {
   padding: 10px;
   border-radius: 50%;
   font-size: 13px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.content .wrapper .social .contact i:hover {
+  background-color: var(--blueColor);
+  color: white;
 }
 
 .content .wrapper .ProjectFriends {
@@ -787,9 +794,57 @@ table .team img {
 
 .content .wrapper .ProjectFriends .VIP p {
   font-size: 40px;
-  /* opacity: 0.2; */
   color: var(--orange-color);
 }
+
+.contact .wrapper .DateJoined span {
+}
 /* --------------------------------------------------- end in friends -------------------------------------------------------------------*/
+/* --------------------------------------------------- start in file -------------------------------------------------------------------*/
+.content .wrapper .BoxFile img {
+  transition: 0.3s;
+}
+
+.content .wrapper .BoxFile:hover img {
+  transform: rotate(8deg);
+}
+
+.content .wrapper .BoxFile .IconDownload i {
+  color: var(--gray);
+}
+
+.content .wrapper .BoxFile .SizeDate {
+  border-top: 1px solid var(--LightGray);
+}
+
+.content .wrapper .statistics .BoxStatistics {
+  border: 1px solid var(--LightGray);
+}
+
+.content .wrapper .statistics .BoxStatistics i {
+  padding: 20px 15px;
+}
+
+.content .wrapper .statistics .upload {
+  background-color: var(--blueColor);
+  color: white;
+  margin-left: 50%;
+  transform: translate(-50%, 5px);
+  transition: 0.3s;
+}
+
+.content .wrapper .statistics .upload:hover i {
+  animation: upload 0.3s linear infinite alternate;
+}
+
+@keyframes upload {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+/* --------------------------------------------------- end in file -------------------------------------------------------------------*/
 
 /* end in  wrapper*/
