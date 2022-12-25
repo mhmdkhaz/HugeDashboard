@@ -17,6 +17,23 @@
   --red-color: #f44336;
 }
 
+/* style in scroll */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blueColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #056ce1;
+}
+
 /* glopal */
 .BorderBottomLight {
   border-bottom: 2px solid var(--LightGray);
@@ -846,5 +863,55 @@ table .team img {
   }
 }
 /* --------------------------------------------------- end in file -------------------------------------------------------------------*/
+
+/* --------------------------------------------------- start in plans -------------------------------------------------------------------*/
+.content .wrapper .PlanPrices .BoxPrice {
+  border: 3px solid white;
+}
+
+.content .wrapper .PlanPrices .free {
+  background-color: var(--green-color);
+  outline: 3px solid var(--green-color);
+}
+
+.content .wrapper .PlanPrices .basic {
+  background-color: var(--blueColor);
+  outline: 3px solid var(--blueColor);
+}
+
+.content .wrapper .PlanPrices .premium {
+  background-color: var(--orange-color);
+  outline: 3px solid var(--orange-color);
+}
+
+.content .wrapper .PlanPrices ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--LightGray);
+  padding: 15px 0;
+}
+
+.content .wrapper .PlanPrices ul .true span::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: var(--green-color);
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.content .wrapper .PlanPrices ul .false span::before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  color: var(--red-color);
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.content .wrapper .PlanPrices ul i {
+  color: var(--gray);
+}
+/* --------------------------------------------------- start in plans -------------------------------------------------------------------*/
 
 /* end in  wrapper*/
